@@ -7,14 +7,7 @@
     public/fonts/EmpiricaNYCMayor-Black.woff
 */
 
-@font-face {
-  font-family: 'Empirica NYCMayor';
-  src:
-    url('/fonts/EmpiricaNYCMayor-Black.woff2') format('woff2'),
-    url('/fonts/EmpiricaNYCMayor-Black.woff')  format('woff'),
-    url('/fonts/EmpiricaNYCMayor-Black.otf')   format('opentype'),
-    url('/fonts/EmpiricaNYCMayor-Black.ttf')   format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: block; /* block prevents FOUT during export */
-}
+/*
+  @font-face is injected at runtime in main.js using import.meta.env.BASE_URL
+  so the font paths work correctly under any base path (e.g. GitHub Pages /graphic-gen/).
+*/

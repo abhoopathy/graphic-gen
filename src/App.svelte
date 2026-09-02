@@ -5,7 +5,9 @@
   import { loadFontForTypeset, typeset, fontAscender } from './lib/typeset.js';
 
   // ── Font map ──────────────────────────────────────────────────────────────
-  const FONT_URL = '/fonts/EmpiricaNYCMayor-Black.otf';
+  // Use BASE_URL so paths work both in dev (/) and on GitHub Pages (/graphic-gen/)
+  const _base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  const FONT_URL = `${_base}/fonts/EmpiricaNYCMayor-Black.otf`;
   const FONT_MAP = {
     'Empirica NYCMayor':    FONT_URL,
     'EmpiricaNYCMayor-Black': FONT_URL,
