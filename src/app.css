@@ -1,0 +1,20 @@
+/*
+  Drop your font file into public/fonts/ and update the src path below.
+  Supported formats: .woff2 (preferred), .woff, .otf, .ttf
+
+  Example:
+    public/fonts/EmpiricaNYCMayor-Black.woff2
+    public/fonts/EmpiricaNYCMayor-Black.woff
+*/
+
+@font-face {
+  font-family: 'Empirica NYCMayor';
+  src:
+    url('/fonts/EmpiricaNYCMayor-Black.woff2') format('woff2'),
+    url('/fonts/EmpiricaNYCMayor-Black.woff')  format('woff'),
+    url('/fonts/EmpiricaNYCMayor-Black.otf')   format('opentype'),
+    url('/fonts/EmpiricaNYCMayor-Black.ttf')   format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: block; /* block prevents FOUT during export */
+}
